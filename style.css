@@ -1,11 +1,21 @@
 body {
     background-color: #cdcdcd;
-    height: 900px;
-    width: 1200px;
+    background: url('Graphics/Hibiscus-bg-khaki.png');
+    background-size: 100%;
+    margin: 0 auto;
+    color: black;
 }
 .logo {
-    position: fixed;
-    
-
-
+    display: block;
+    margin: 10%;
+    float: center;
+}
+nav {
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 20px;
+}
+a {
+    color: black;
+    font-family: arial, narrow;
 }
