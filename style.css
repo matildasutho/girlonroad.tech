@@ -21,4 +21,5 @@ a {
 logo {
     width: 60%;
     border: 2px solid black;
+    text-align: center;
 }
