@@ -5,19 +5,17 @@ body {
     width: 100%;
     margin: 0 auto;
     color: black;
+    letter-spacing: 2px;
+    font-family: 'american typewriter', regular;
 }
 img {
     display: block;
     margin: auto;
 }
-nav {
-    border: 2px solid black;
-    margin: 0 auto;
-    padding: 20px;
-}
 a {
     color: black;
-    font-family: arial, narrow;
+    font-family: 'american typewriter', regular;
+    line-spacing: 2px;
 }
 logo {
     width: 60%;
