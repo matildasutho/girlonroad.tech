@@ -5,20 +5,19 @@ body {
     width: 100%;
     margin: 0 auto;
     color: black;
-    letter-spacing: 2px;
-    font-family: 'american typewriter', regular;
-}
-img {
-    display: block;
-    margin: auto;
+    letter-spacing: 3px;
+    font-family: 'Sanchez', serif;
+    text-align: center;
 }
 a {
+    text-decoration: none;
     color: black;
-    font-family: 'american typewriter', regular;
-    line-spacing: 2px;
 }
-logo {
-    width: 60%;
-    border: 2px solid black;
+img {
     text-align: center;
+}
+.logo {
+    size: 60%;
+    display: block;
+    margin: auto;
 }
