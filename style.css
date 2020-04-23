@@ -3,43 +3,69 @@ body {
     background: url('Hibiscus-bg-grey.png');
     height: 100%;
     width: 100%;
-    margin: 0 auto;
     color: black;
-    letter-spacing: 3px;
-    font-size: 12px;
+    letter-spacing: 8px;
+    font-size: 18px;
+    font-weight: lighter;
     font-family: 'Sanchez', serif;
-    text-align: center;
+    text-align: left;
 }
 a {
     text-decoration: none;
     color: black;
 }
-img {
+.GOR {
+    position: fixed;
     text-align: center;
+    left: 0%;
+    bottom: 0%;
 }
-.logo {
-    max-width: 60%;
-    display: block;
-    margin: auto;
-    padding: 10%;
+img {
+    width: 100%;
 }
-@media (max-width: 800px) {
+input {
+    height: inherit;
+    width: 77%;
+    margin: 0% 0.5% 0% 0%;
+    padding: 1px;
+    font-size: 100%;
+    border: 1px solid black;
+    background-color: rgba(255,255,255,0);
+    font: inherit;
+    letter-spacing: inherit;
+    float: left;
+    display: inline-block;
+}
+.button {
+    height: inherit;
+    width: 20%;
+    font-size: 100%;
+    border: 1px solid black;
+    background-color: rgba(255,255,255,0);
+    font: inherit;
+    letter-spacing: inherit;
+    display: inline-block;
+    -webkit-appearance: none;
+}
+.email .facebook .instagram .soundcloud {
+    position: fixed;
+    margin: 0 auto;
+    font-size: 100%;
+    border: 1px solid black;
+    background-color: rgba(255,255,255,0);
+    font: inherit;
+    letter-spacing: inherit;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 800px) {
     body {
-        background: cover;
-        background-position: center;
-        width: 100%;
-        height: 100%;
-    }
-    .logo {
-        max-width: 80%;
-    }
-    body {
-        font-size: 9px;
+        
     }
 }
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     body {
-        background: cover;
+        
         background-position: center;
         width: 100%;
         height: 100%;
@@ -48,6 +74,6 @@ img {
         max-width: 90%;
     }
     body {
-        font-size: 10px;
+        
     }
 }
