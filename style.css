@@ -9,12 +9,6 @@ body {
     font-family: 'Sanchez', serif;
     text-align: left;
 }
-a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 14px;
-}
-
 input {
     height: inherit;
     width: 77%;
@@ -31,6 +25,22 @@ input {
 }
 input:hover {
     color: #3cc732;
+}
+.button {
+    height: inherit;
+    width: 20%;
+    font-size: 100%;
+    color: #0062ff;
+    border: 1px solid #0062ff;
+    background-color: rgba(255,255,255,0);
+    font: inherit;
+    letter-spacing: inherit;
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
 }
 .menuitems {
     position: fixed;
@@ -51,17 +61,7 @@ input:hover {
     color: #0eebbb;
    font-size: 18px;
 }   
-.button {
-    height: inherit;
-    width: 20%;
-    font-size: 100%;
-    color: #0062ff;
-    border: 1px solid #0062ff;
-    background-color: rgba(255,255,255,0);
-    font: inherit;
-    letter-spacing: inherit;
-    display: inline-block;
-}
+
 .link {
     position: fixed;
     margin: 0 auto;
@@ -74,15 +74,16 @@ input:hover {
     position: fixed;
     color: #ee00ff;
 }
+
 .GOR {
     position: fixed;
     left: 0%;
-    bottom: 0%;
+    bottom: -6%;
     text-align: justify;
     font-size: 11px;
 }
 .logo {
-    width: 80%;
+    width: 90%;
 }
 @media only screen and (max-width: 400px) {
     body {
