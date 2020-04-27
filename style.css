@@ -61,7 +61,6 @@ input:hover {
     font: inherit;
     letter-spacing: inherit;
     display: inline-block;
-    -webkit-appearance: none;
 }
 .link {
     position: fixed;
