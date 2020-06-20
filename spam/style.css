@@ -1,16 +1,17 @@
 body {
     background-color: #cdcdcd;
-    background: url('Hibiscus-bg-grey.png');
+    background: url('spam/Hibiscus-bg-grey.png');
     background-attachment: fixed;
     height: 100%;
     width: 100%;
-    position: fixed;
-    top: 10%;
     letter-spacing: 8px;
     font-size: 20px;
     font-weight: lighter;
     font-family: 'Sanchez', serif;
     text-align: left;
+    position: fixed;
+    top: 10%;
+    color: #ff0000;
 }
 header {
     position: fixed;
@@ -63,7 +64,6 @@ a {
     color: #ff0000;
    font-size: 18px;
 }   
-
 .link {
     position: fixed;
     margin: 0 auto;
@@ -76,7 +76,6 @@ a {
     position: fixed;
     color: #ff0000;
 }
-
 .GOR {
     position: fixed;
     left: 0%;
