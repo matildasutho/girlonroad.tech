@@ -1,0 +1,75 @@
+.viewport-container {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+#vpoverflow {
+    width: 100%;
+    overflow-y: scroll;
+}
+#vpinner {
+    width: 75%;
+    margin: 0 auto;
+    padding-right: 22%;
+    text-align: left;
+    line-height: 30px;
+}
+.crntouter {
+    min-height: fit-content;
+
+}
+.crntinner {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: max-content;
+    font-size: 13px;
+  
+}
+#crntstyle {
+    border-right: 1px solid #dab2db;
+    border-bottom: 1px solid #dab2db;
+    font-family: lores-9-plus-wide, sans-serif;
+    text-align: center;
+    padding: 20px 20px;
+}
+#crntstyle-sub {
+    border-right: 1px solid #dab2db;
+    border-bottom: 1px solid #dab2db;
+    font-family: lores-9-plus-wide, sans-serif;
+    text-align: center;
+    padding: 15px 0px;
+}
+#crntstyle-sub-btm {
+    border-right: 1px solid #dab2db;
+    font-family: lores-9-plus-wide, sans-serif;
+    text-align: center;
+    padding: 15px 0px;
+}
+#crntstyle-btm {
+    border-right: 1px solid #dab2db;
+    font-family: lores-9-plus-wide, sans-serif;
+    text-align: center;
+    padding: 15px 0px;
+}
+div#crntstyle:hover {
+    color: red;
+    cursor: pointer;
+}
+.archvouter {
+    height: 100%;  
+    width: 100%;
+    overflow: hidden;
+}
+.archvinner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 3fr;
+    
+    font-family: cairo, sans-serif;
+   
+}
+#archvstyle {
+    padding: 10px;
+    border-bottom: 1px solid #f0a7f3;
+}
