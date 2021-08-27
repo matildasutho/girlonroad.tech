@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
 * {
-    
+    margin: 0;
+    padding: 0;
 }
 body {
-    color: blanchedalmond;
-    background-color: #a93400;
-    font-family: cursive;
-    -webkit-text-stroke: 1px white;
-    font-size: 32px;
+    color: rgba(255, 255, 255, 0.67);
+    background-color: #141312;
+    font-family: 'Hina Mincho', serif;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+    font-size: 2em;
     text-align: center;
+    letter-spacing: 3;
+    text-shadow: 0.1em 0.1em 0.2em rgba(255, 255, 255, 0.67); 
 }
