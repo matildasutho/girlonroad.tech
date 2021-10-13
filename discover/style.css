@@ -1,0 +1,364 @@
+* {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  scrollbar-width: none;
+  -webkit-scrollbar-display: none;
+  scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+:root{
+  --col-01: #cfe6eb; /*angel caption*/
+  --col-02: #b4d8c9; /*angel hover*/
+  --col-03: #e3dccf;
+  --col-04: #2c271d;
+  --col-05: #7a6a52;
+}
+
+
+body {
+  height: 2020px;
+  width: 4050px;
+  background-color: #574a43;
+  font-size: 1rem; 
+  cursor: url(img/Poseidon_Disney_Hercules.png), auto;
+}
+
+a {
+  cursor: pointer;
+}
+
+#discover-logo {
+  position: fixed;
+  padding: 1em;
+  z-index: 13;
+  top: 0;
+  left: 0;
+  width: 15em;
+  height: 14em;
+  opacity: 0.7;
+  cursor: pointer;
+}
+#discover-logo:hover,
+#discover-logo:focus {
+  opacity: 1;
+  transition: ease-in-out;
+ 
+}
+
+
+#GOR-logo {
+  position: fixed;
+  padding: 2em;
+  z-index: 13;
+  bottom: 0;
+  right: 0;
+  width: 8em;
+  height: 2em;
+  opacity: 0.5;
+}
+#GOR-logo:hover,
+#GOR-logo:focus {
+  opacity: 0.9;
+  transition: ease-in-out;
+}
+
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 23;
+  left: 0;
+  top: 0;
+  background-color:rgba(75, 68, 56, 0.9);
+  text-align: center;
+  cursor: auto;
+}
+
+
+
+.close {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.close:hover, 
+.close:focus {
+ opacity: 1;
+
+}
+
+#modal-inner, p {
+  width: 70%; 
+  height: fit-content;
+  margin: 0 auto; 
+  padding: 2%;
+  overflow: visible;
+  text-align: center;
+  line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  color: var(--col-05);
+  opacity: 0.9;
+  -webkit-text-stroke: 2px var(--col-04);
+  text-shadow: 0em 0em 3em var(--col-03);
+}
+
+
+
+#frame {
+  position: fixed;
+  z-index: 0;
+}
+
+#layer-0 {
+  width: 100%; 
+  height: 100%; 
+  position: absolute; 
+  z-index: -223; 
+  background-image: url(img/layer-0.png); 
+  background-position: 3200px 2400px; 
+  background-size: 800%; 
+  animation: 808s move-0 linear;  
+  animation-iteration-count: infinite; 
+  animation-direction: alternate-reverse; 
+  background-repeat: repeat;
+}
+#layer-2 {
+  background-image: url(img/layer-2.png);
+  position: absolute;
+  z-index: -999;
+  top: 30%;
+  transform: rotateZ(330deg);
+}
+#ship {
+  position: absolute;
+  z-index: 6;
+  bottom: 0;
+  right: 0;
+}
+
+
+#hl-frame {
+  height: 100%;
+  width: 100%;
+  margin: -95% -265%;
+  animation: 303s move-1 linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transform: translate3d(45, 62, 0);
+}
+#highlight {
+  position: absolute; 
+  z-index: 1;  
+}
+
+
+#soundclouds {
+  height: 2300px;
+  width: 4050px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: auto;
+  transform: translateZ(-1px);
+  
+}
+.wings {
+  position: absolute;
+  z-index: 2;
+  background-image: url(img/wings-flying.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  
+}
+
+#w-0 {
+  position: relative;
+  top: -1313px;
+  left: 3622px;
+  height: 6rem;
+  width: 13rem;
+  transform: rotateZ(30deg);
+}
+#w-1 {
+  position: relative;
+  top: -1513px;
+  left: 823px;
+  height: 6rem;
+  width: 13rem;
+  transform: rotateZ(30deg);
+}
+#w-2 {
+  position: relative;
+  top: -913px;
+  left: 1823px;
+  height: 6rem;
+  width: 13rem;
+  transform: rotateZ(330deg);
+}
+#w-3 {
+  position: relative;
+  top: 413px;
+  left: 2823px;
+  height: 6rem;
+  width: 13rem;
+  transform: rotateZ(330deg);
+}
+#w-4 {
+  position: relative;
+  top: -423px;
+  left: 300px;
+  height: 6rem;
+  width: 13rem;
+  transform: rotateZ(330deg);
+}
+#w-5 {
+  position: relative;
+  top: -623px;
+  left: 2723px;
+  height: 6rem;
+  width: 13rem;
+  transform: rotateZ(30deg);
+}
+.ufo {
+  position: absolute;
+  z-index: 13;
+  height: 16rem;
+  width: 24rem;
+  background-image: url(img/angel-wings.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+.sc-player {
+  margin: 0 auto;
+  padding: 8rem 8rem ;
+}
+.sc-title-txt {
+  color: var(--col-01);  
+  text-decoration: none; 
+  font-size: 1.6rem; 
+  -webkit-text-stroke: 1px #2c271d; 
+  text-shadow: 2px 2px 2px #2c271d;  
+}
+iframe {
+  cursor: pointer;
+}
+
+
+#makinist {
+  position: relative;
+  top: 453px;
+  left: 223px;
+  cursor: pointer;
+}
+#veronica-moser {
+  position: relative;
+  top: 1523px;
+  left: 3050px;
+  cursor: pointer;
+}
+#galera {
+  position: relative;
+  top: -623px;
+  left: 2377px;
+}
+#vanessaworm {
+  position: relative;
+  top: 1323px;
+  left: 1023px;
+}
+#mtlda {
+  position: relative;
+  top: -813px;
+  left: 3423px;
+}
+#e-talking {
+  position: relative;
+  top: 813px;
+  left: 1233px;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    height: 100%;
+  }
+  #modal-inner,p {
+    height: 100%;
+    width: 90%;
+    padding-top: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+
+  }
+
+  .close {
+    position: fixed;
+    z-index: 25;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .modal {
+    height: fit-content;
+  }
+  #modal-inner,p {
+    height: 100%;
+    width: 90%;
+    padding-top: 20%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .close {
+    position: fixed;
+    z-index: 25;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+@keyframes move-0 {
+  0% {
+    background-position: 4000px 3500px;
+  }
+  25% {
+    background-position: 5100px 4200px;
+  }
+  75% {
+    background-position: 7300px 5500px;
+  }
+  100% {
+    background-position: 6000px 4300px;
+  }
+}
+@keyframes move-1 {
+  0% {
+    margin: -95% -265%;
+  }
+  25% {
+    margin: -45% -195%;
+  }
+  50% {
+    margin: -2% -50%;
+  }
+  75% {
+    margin: -7% -165%;
+  }
+  100% {
+    margin: -82% -201%;
+  }
+}
