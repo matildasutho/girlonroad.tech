@@ -46,6 +46,7 @@ function TBT() {
     destination = destinationParam;
     recording   = tbtrecord;
 
+	document.getElementById(destination).setAttribute("style","height:100%;overflow:auto;");
     // global text positions
     row = 0;
     col = 0;
@@ -170,6 +171,7 @@ function TBT() {
 	}
 
 	// render_text += String.fromCharCode( recording[currentChar][0] );
+	dest.scrollTop = dest.scrollHeight - dest.clientHeight;
 	dest.innerHTML = render_text;
 	
 
