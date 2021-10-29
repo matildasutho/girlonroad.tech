@@ -221,6 +221,17 @@ a {
   width: 13rem;
   transform: rotateZ(30deg);
 }
+
+.xerox {
+  position: absolute;
+  z-index: 13;
+  height: 12rem;
+  width: 12rem;
+  background-image: url(img/GOR-mothafunk200px.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
 .ufo {
   position: absolute;
   z-index: 13;
@@ -280,6 +291,11 @@ iframe {
   top: 813px;
   left: 1233px;
 }
+#mothafunk {
+  position: relative;
+  top: 1823px;
+  left:600px;
+}
 
 @media only screen and (max-width: 600px) {
   .modal {
@@ -311,12 +327,7 @@ iframe {
   position: absolute;
 
 }
-#mob-frame {
-  width: 100%;
-  height: 100%;
-  z-index: 13;
-  position: absolute;
-}
+
 }
 
 
