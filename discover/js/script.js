@@ -6,16 +6,21 @@ var discover = document.getElementById("discover-logo");
 
 window.onload = function() {
   modal.style.display = "block";
+
 }
 span.onclick = function() {
   modal.style.display = "none";
+
 }
 discover.onclick = function() {
   modal.style.display = "block";
 }
 
 //scroll top!
-
+document.body.onload = function(){
+  document.documentElement.scrollTop = 1723;
+  document.documentElement.scrollLeft = 870;
+}
 
 
 
