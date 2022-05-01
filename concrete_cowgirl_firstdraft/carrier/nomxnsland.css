@@ -1,0 +1,75 @@
+* {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#graveyard {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    position: absolute;
+}
+#bones {
+    font-size: 4em;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+}
+#lazybones {
+    width: 80vw;
+    height: 80vh;
+}
+#poems {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    height: fit-content;
+    text-align: right;
+    font-size: 4em;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+#poems:hover {
+    animation: hide 2s linear forwards;
+
+}
+#before-poems {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    height: 2em;
+    width: 300px;
+    text-align: right;
+    font-size: 3em;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    opacity: 0;
+}
+#before-poems:hover {
+    animation: reveal 1s linear forwards;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        bottom: 0;
+    }
+    100% {
+        opacity:0;
+        bottom: 20;
+    }
+}
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        background-color: rgb(0, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        background-color: rgb(0, 0, 0);
+    }
+}

@@ -1,0 +1,63 @@
+* {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+body {
+    background-color: black;
+}
+#spur a {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 5px 2px 20px white;
+}
+#spiral-fall9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 10em;
+    fill: rgba(255, 0, 0, 0.7);
+    animation: rotate 2s linear infinite;
+}
+   
+@keyframes rotate {
+    0% {
+    transform: rotateZ(0deg);
+    }
+    25% {
+    transform: rotateZ(90deg);
+    }
+    50% {
+    transform: rotateZ(180deg);
+    }
+    75% {
+    transform: rotateZ(270deg);
+    }
+    100% {
+    transform: rotateZ(360deg);
+    }
+}
+
+
+@keyframes fadein {
+              0% {
+                  opacity: 0;
+                  transform: skewX(15deg)
+              }
+              50% {
+                  opacity: 0;
+                  transform: skewX(15deg)
+              }
+              80% {
+                  opacity: 0;
+                  transform: skewX(15deg)
+              }
+              100% {
+                  opacity: 1;
+                  transform: skewX(0deg)
+              }
+          }

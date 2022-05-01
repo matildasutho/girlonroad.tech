@@ -1,0 +1,87 @@
+* {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+body {
+    background-color: black;
+    animation: 60s colorchange infinite;
+}
+.circle {
+	position: absolute;
+    background-color: rgba(189, 186, 134, 0.1);
+    border-radius: 30% / 50%; 
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0; 
+    margin: 0; 
+    animation: 30s morph infinite;
+
+}
+.circle a {
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: 5px 1px 20px rgb(255, 255, 255);
+  padding: 20% 48%;
+}
+#spur {
+  position: absolute;
+  margin: auto;
+  padding-top: 42vh;
+  text-align: center;
+  z-index: 10;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0px 0px 100px white;
+  animation: 5s swell linear infinite;
+}
+a:hover{
+  color: red;
+  transition: 2s linear;
+}
+@keyframes morph {
+    0% {
+      border-radius: 10% 70% 70% 10% / 10% 10% 70% 70%;
+    }
+    25% { 
+      border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+    50% {
+      border-radius: 25% 25% 33% 67% / 55% 27% 73% 45%;
+    }
+    75% {
+      border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    }
+    100% {
+      border-radius: 10% 70% 70% 10% / 10% 10% 70% 70%;
+    }
+  }
+
+  @keyframes colorchange {
+      0%   {background: #180f09;}
+      25%  {background: rgb(22, 4, 4);}
+      50%  {background: rgb(16, 11, 3);}
+      75%  {background: #140804;}
+      100% {background:   #140503;}
+}
+@-webkit-keyframes colorchange
+    {
+        0%   {background: #382314;}
+        25%  {background: rgb(47, 10, 10);}
+        50%  {background: rgb(40, 26, 3);}
+        75%  {background: #1b1f04;}
+        100% {background:   #2d0f0b;}
+} 
+
+@keyframes swell {
+  0% {
+    font-size: 60px;
+  }
+  60% {
+    font-size: 80px;
+  }
+  100% {
+    font-size: 60px;
+  }
+}

@@ -1,0 +1,59 @@
+* {
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.4);
+    text-shadow: 5px 2px 20px white;
+
+}
+header {
+    height: 15vh;
+    background-color: rgb(0, 0, 0, 0.7);
+
+}
+#grid-wrap {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#moonrise {
+    font-size: 1em;
+    text-align: justify;
+    width: 60vw;
+    height: fit-content;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    animation: scrolltext 50s linear;
+}
+
+#arrow {
+    position: fixed;
+    z-index: 11;
+    top: 50vh;
+    right: 0;
+    width: 10vw;
+    height: 100vh;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    font-size: 5em;
+}
+#arrow a {
+    color: white; 
+    opacity: 0.6;
+}
+#arrow a:hover {
+    color: red;
+}
+@keyframes scrolltext {
+    from {
+        transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+    to {
+        transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+    }
+}
