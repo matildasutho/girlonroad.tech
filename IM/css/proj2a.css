@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+} 
+
+@font-face {
+    font-family: 'Menlo'; 
+    src: url('../assets/fonts/Menlo-Regular.ttf') format('truetype');
+    font-family: 'Absans'; 
+    src: url('../assets/fonts/Absans-Regular.otf') format('opentype');
+}
+
+header {
+    background-color: white;
+    color: black;
+    height: 100px;
+    position: relative;
+    line-height: 2.5;
+}   
+
+body {
+    background-color: rgb(238, 238, 238);
+ }
+
+ html, body {
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 300%;
+    font-family: 'Absans';
+}
+
+h2 {
+    font-size: 300%;
+    font-family: 'Absans';
+    letter-spacing: 1.5px;
+}
+
+header p {
+    font-family: 'Menlo';
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+body p {
+    font-family: 'Menlo';
+    font-size: 12px;
+}
+
+pre {
+    white-space: pre-wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a {
+    font-family: 'Menlo';
+    color: black;
+}
+
+.left {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.right {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+}    
+
+.scrolling-text-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-family: 'Menlo';
+}
+
+@keyframes slide-right-to-left {
+    0% {
+        transform: translateX(100%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scrolling-text-01 {
+    animation: slide-right-to-left 25s infinite;
+    animation-timing-function: linear;
+}
+ 
+.box {
+    height: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: background-color 0.8s ease-in-out 0.1s, color 0.8s ease-in-out 0.1s;
+}
+
+.box > div {
+    flex: 1;
+}
+
+.box > div:not(:last-child) {
+    border-right: 1px solid #ffffff;
+}
+
+.box > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box h2 {
+    font-size: 20px;
+    font-family: 'Menlo';
+    text-align: left;
+    padding-left: 20px;
+}
+
+.box p {
+    font-size: 15px;
+    font-family: 'Menlo';
+    position: relative;
+    text-align: left;
+    padding-left: 20px;
+}
+
+pre { /* use when you want paragraph text to recognise spaces */
+    white-space: pre-wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#box1 {
+    background-color: black;
+    color: #FF6602;
+}
+
+#box1:hover {
+    background-color: #FF6602;
+    color: black;
+}
+
+.GIFimageContainer {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.baseimage, .hoverImage {
+    height: 100%;
+    width: 100%;
+}
+
+.hoverArea {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.bottomRight {
+    right: -20px;
+    bottom: -20px;
+}
+
+.topRight {
+    right: -20px;
+    top: -20px;
+}
+
+.hoverArea:hover {
+    opacity: 1;
+}
+
+#box2 {
+    background-color: black;
+    color: #FF6602;
+}
+
+#box2 pre {
+font-size: 180px !important;
+text-align: center;
+}
+
+#box2 p {
+    font-size: 15px !important;
+    text-align: center;
+    }
+
+#box2:hover {
+    background-color: #FF6602;
+    color: black;
+}
+
+#box3 {
+    background-color: black;
+    color: #FF6602;
+}
+
+#box3 pre {
+    font-size: 180px !important;
+    top: 50%;
+    text-align: center;
+}
+
+#box3 p {
+    font-size: 15px !important;
+    text-align: center;
+    }
+
+#box3:hover {
+    background-color: #FF6602;
+    color: black;
+}
+
+.draggable {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#dragqueen * {
+    font-size: 10px !important;
+}
+
+#dragqueen * {
+    font-size: 10px !important;
+}
+
+#dragqueensis *, #dragqueenbrew *, #dragqueencus *, #dragqueenpapa *, #dragqueenmama *, #dragqueengrandmama *, #dragqueengrandpapa *, #dragqueenunc *, #dragqueentante *, #dragqueenbebe *, #dragqueenwitch *  {
+    font-size: 15px !important; 
+}
+
+#dragqueen {
+    position: fixed;
+    top: 35px;
+    left: 265px;
+    background-color: #030ed6;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    height: 110px;
+    width: 280px;
+}
+
+#dragqueensis {
+    position: absolute;
+    top: 150px;
+    left: 80%;
+    background-color: #be00ee;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    height: 250px;
+    width: 250px;
+}
+
+#dragqueenbrew {
+    position: absolute;
+    top: 300px;
+    left: 70%;
+    background-color: #00ee77;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    height: 250px;
+    width: 250px;
+}
+
+#dragqueencus {
+    position: absolute;
+    top: 400px;
+    left: 68%;
+    background-color: #eeea00;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    height: 250px;
+    width: 250px;
+}
+
+#dragqueenpapa {
+    position: absolute;
+    top: 450px;
+    left: 82%;
+    background-color: #00f2ff;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    height: 250px;
+    width: 250px;
+}
+
+#dragqueenmama {
+    position: absolute;
+    top: 475px;
+    left: 80%;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    height: 250px;
+    width: 250px;
+}
+
+#dragqueengrandmama {
+    position: absolute;
+    top: 430px;
+    left: 77%;
+    background-color: #be00ee;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    height: 250px;
+    width: 250px;
+}
+
+#dragqueengrandpapa {
+    position: absolute;
+    top: 270px;
+    left: 81%;
+    background-color: #eeea00;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    height: 250px;
+    width: 250px;
+}
+
+#dragqueenunc {
+    position: absolute;
+    top: 370px;
+    left: 79%;
+    background-color: #00f2ff;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    height: 250px;
+    width: 250px;
+}
+
+#dragqueentante {
+    position: absolute;
+    top: 350px;
+    left: 84%;
+    background-color: #00ee77;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    height: 250px;
+    width: 250px;
+}
+
+#dragqueenwitch {
+    position: absolute;
+    top: 200px;
+    left: 69%;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    z-index: 888;
+    height: 250px;
+    width: 250px;
+}
+
+#flyingImage {
+    position: fixed;
+    animation: floatUp 10s cubic-bezier(1, 1, 0.2, 1) infinite; /* P1x, P1y, P2x, P2y */
+    bottom: 0;
+    width: 150px;
+    z-index: 1100;
+}
+
+@keyframes floatUp {
+    0% { right: 0; bottom: 0; }
+    100% { right: 100%; bottom: 90%; }
+}
+
+#fallingImage { 
+    position: fixed;
+    animation: fallDown 15s cubic-bezier(0.2, 0.8, 1, 0.7) infinite; 
+    width: 145px;
+    z-index: 1100;
+}
+
+@keyframes fallDown {
+    0% { left: 40%; top: 0; }
+    100% { left: 70%; top: 100%; }
+}
+
+#floatinginbottomImage { 
+    position: fixed;
+    animation: flyinBottom 10s cubic-bezier(0.5, 0.1, .9, 1) infinite;
+    width: 190px;
+    z-index: 1100;
+}
+
+@keyframes flyinBottom {
+    0% { left: 50%; top: 100%; 
+    }
+    100% { left: 80%; top: -50%; }
+}
+
+#flyinlefty { 
+    position: fixed;
+    animation: flyinlefty 7s cubic-bezier(0.6, 1, .9, 0.5) infinite;
+    width: 115px;
+    z-index: 1100;
+}
+
+@keyframes flyinlefty {
+    0% { left: -10%; top: 45%; }
+    100% { left: 100%; top: 70%; }
+}

@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html {
+    font-family: 'Menlo'; 
+    src: url('../assets/fonts/Menlo-Regular.ttf') format('truetype');
+    font-family: 'Absans'; 
+    src: url('../assets/fonts/Absans-Regular.otf') format('opentype');
+    background-color: #030FD5;
+}
+
+
+#everything {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  
+    color: #F4F4F4;  
+    font-family: 'Menlo';
+    font-size: 10px;
+}
+
+.header {
+    margin-top: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;;
+    font-family: 'Absans';
+    font-size: 20px;
+}
+
+.scrolling-text {
+    position: relative;
+    transform: translateY(-50%);
+    font-size: 12px;
+    font-family: 'Menlo';
+    animation: slide-right-to-left 30s infinite;
+    animation-timing-function: linear;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+@keyframes slide-right-to-left {
+    0% {
+        transform: translateX(100%);
+        visibility: visible;
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.header-row {
+    width: 100%;
+}
+
+.header-content { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;;
+    padding: 10px;
+    background-color: #030FD5;
+    border: 1px dotted #F4F4F4;
+}
+
+.header-content:hover { 
+    border: 1px solid #F4F4F4; 
+}
+
+.extra-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #F4F4F4;
+    align-items: center;
+    color: black;
+    line-height: 2;
+}
+
+pre {
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 12px;
+    font-family: 'Absans';
+    padding-top: 5px;
+}
+
+.header-button button {
+    background: none; 
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-symbol {
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid #F4F4F4;
+    display: inline-block;
+    margin: 6px;
+    margin-right: 0;
+    transition: transform 0.5s ease;
+    transform: rotate(90deg);
+}
+
+.button-symbol.closed {
+    transform: rotate(0deg);
+}
+
+.link-wayposts {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.image-wayposts {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 280px;
+    z-index: 10;
+    width: 200px;
+    height: auto;
+}
+
+.link-wayposts:hover .image-wayposts {
+    display: block;
+}
+
+.link-wayposts:hover pre {
+    text-decoration: underline ;
+}
+
+.hold-ma-sketches {
+    display: flex;
+    height: 100vh;
+    flex-flow:row wrap;
+    align-content:flex-start;
+    justify-content:flex-start;
+}
+  
+.sketch-link, .sketch-link:visited {
+    text-decoration: none;
+    display: block;
+}
+
+.sketches {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    text-align: start;
+    line-height: 1.5;
+    font-size: 6px;
+    font-family: 'Menlo';
+    overflow: hidden;
+}
+
+.hover-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    object-fit: cover;
+}
+
+.sketches:hover .hover-gif {
+    display: block !important;
+}
+
+.box-text {
+    font-size: 7px;
+}
+
+.sketch01 { 
+    background-color: #000000; 
+    color: #FF40B4;
+    border: 1px dotted #FF40B4;
+}
+
+.sketch01:hover {
+    border: .5px solid #F4F4F4;
+}
+
+.sketch02 { 
+    background-color: #000000; 
+    color: #7F51F5;
+    border: 1px dotted #7F51F5;
+}
+
+.sketch02:hover {
+    border: .5px solid #F4F4F4;
+}
+
+.sketch03 { 
+    background-color: #000000; 
+    color: #FBB03C;
+    border: 1px dotted #FBB03C;
+}
+
+.sketch03:hover {
+    border: .5px solid #F4F4F4;
+}
+
+.sketch04 { 
+    background-color: #000000; 
+    color: #FEFF20;
+    border: 1px dotted #FEFF20;
+}
+
+.sketch04:hover {
+    border: .5px solid #F4F4F4;
+}
+
+.sketch05 { 
+    background-color: #000000; 
+    color: #29ABE2;
+    border: 1px dotted #29ABE2;
+}
+
+.sketch05:hover {
+    border: .5px solid #F4F4F4;
+}
+
+.sketch06 { 
+    background-color: #000000; 
+    color: #6FE324;
+    border: 1px dotted #6FE324;
+}
+
+.sketch06:hover {
+    border: .5px solid #F4F4F4;
+}
