@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #d1cbb9;
+      }
+      .controls {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        position: absolute;
+        width: fit-content;
+        z-index: 100;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+      <button id="clearButton">Clear</button>
+      <button id="togglePostcardsButton">Toggle Postcards</button>
+    </div>
+    <canvas id="drawingCanvas"></canvas>
+    <script src="capers.js"></script>
+  </body>
+</html>
